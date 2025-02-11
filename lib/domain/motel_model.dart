@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class DefaultModel {
   final bool sucesso;
   final DataModel data;
@@ -233,16 +231,16 @@ class PeriodoModel {
 
   Map<String, dynamic> toMap() {
     final result = <String, dynamic>{};
-  
+
     result.addAll({'tempoFormatado': tempoFormatado});
     result.addAll({'tempo': tempo});
     result.addAll({'valor': valor});
     result.addAll({'valorTotal': valorTotal});
     result.addAll({'temCortesia': temCortesia});
-    if(desconto != null){
+    if (desconto != null) {
       result.addAll({'desconto': desconto!.toMap()});
     }
-  
+
     return result;
   }
 
@@ -253,7 +251,9 @@ class PeriodoModel {
       valor: map['valor']?.toDouble() ?? 0.0,
       valorTotal: map['valorTotal']?.toDouble() ?? 0.0,
       temCortesia: map['temCortesia'] ?? false,
-      desconto: map['desconto'] != null ? DescontoModel.fromMap(map['desconto']) : null,
+      desconto: map['desconto'] != null
+          ? DescontoModel.fromMap(map['desconto'])
+          : null,
     );
   }
 }
