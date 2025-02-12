@@ -1,7 +1,13 @@
 import 'package:flutter/widgets.dart';
+import 'package:teste_tecnico_guia_de_moteis/app/home/home_controller.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final HomeController homeController;
+
+  const HomePage({
+    super.key,
+    required this.homeController,
+  });
 
   @override
   Widget build(BuildContext context) {

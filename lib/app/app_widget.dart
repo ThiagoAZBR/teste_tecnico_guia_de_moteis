@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teste_tecnico_guia_de_moteis/app/home/home_page.dart';
+import 'package:teste_tecnico_guia_de_moteis/core/routes/app_routes.dart';
 import 'package:teste_tecnico_guia_de_moteis/core/routes/app_routing.dart';
 
 class AppWidget extends StatelessWidget {
@@ -9,7 +9,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      initialRoute: AppRoutes.homePage,
       routes: AppRouting().routes(),
     );
   }
