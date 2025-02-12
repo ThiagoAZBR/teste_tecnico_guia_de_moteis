@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
         builder: (_, HomeStates state) {
           switch (state) {
             case HomeDefaultState():
-              return const HomeDefaultWidget();
+              return HomeDefaultWidget(motelModel: state.data,);
             case HomeLoadingState():
               return const HomeLoadingWidget();
             default:

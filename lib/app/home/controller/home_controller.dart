@@ -18,7 +18,7 @@ class HomeController extends Cubit<HomeStates> {
         return null;
       },
       (success) {
-        emit(HomeDefaultState());
+        emit(HomeDefaultState(data: success));
         return success;
       },
     );
