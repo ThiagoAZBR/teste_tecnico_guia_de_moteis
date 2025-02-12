@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:fpdart/fpdart.dart';
-import 'package:teste_tecnico_guia_de_moteis/core/app_urls.dart';
+import 'package:teste_tecnico_guia_de_moteis/core/network/app_urls.dart';
 import 'package:teste_tecnico_guia_de_moteis/core/exceptions.dart';
 import 'package:teste_tecnico_guia_de_moteis/domain/models/motel_model.dart';
 
