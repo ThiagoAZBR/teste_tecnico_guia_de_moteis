@@ -28,7 +28,7 @@ class HomeContainer implements Dependencies {
     ));
 
     I.registerSingleton(HomeController(
-      HomeDefaultState(),
+      HomeLoadingState(),
       I.get<GetMotelListUseCase>(),
     ));
   }
